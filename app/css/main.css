@@ -8082,25 +8082,52 @@ body {
 .fun_facts {
     width: 1040px;
     margin: 0 auto;
+    padding: 200px 0 0 0;
 }
 
 .items {
     position: relative;
 }
 
-.item1, .item2, .item3, .item3 {
+.item1, .item2, .item3, .item4 {
     margin: 0 auto 31px;
+    display: block;
+    width: 130px;
+    height: 130px;
 }
 
-.item1::before, .item2::before, .item3::before, .item3::before {
+.item1::before, .item2::before, .item3::before, .item4::before {
     position: absolute;
     content: '';
 }
 
-.item1::before {
+.item1 {
     background: url("../img/sprite.png") no-repeat -8px -132px;
-    width: 130px;
-    height: 130px;
-    top: 37px;
-    left: 32px;
+}
+
+.item2 {
+    background: url("../img/sprite.png") no-repeat -159px -132px;
+}
+
+.item3 {
+    background: url("../img/sprite.png") no-repeat -309px -132px;
+}
+
+.item4 {
+    background: url("../img/sprite.png") no-repeat -461px -132px;
+}
+
+.ico-item-title, .ico-item-text {
+    display: block;
+    color: #fff;
+}
+
+.ico-item-title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.ico-item-text {
+    text-transform: uppercase;
+    font-size: 18px;
 }
