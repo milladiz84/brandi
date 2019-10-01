@@ -1,0 +1,115 @@
+@import 'variables';
+@import '../../bootstrap/scss/bootstrap-reboot';
+@import '../../bootstrap/scss/utilities';
+@import '../../bootstrap/scss/grid';
+@import '../../bootstrap/scss/navbar';
+@import '../../bootstrap/scss/buttons';
+@import '../../bootstrap/scss/alert';
+@import '../../bootstrap/scss/tooltip';
+@import '../../bootstrap/scss/transitions';
+@import '../../bootstrap/scss/popover';
+@import '../../bootstrap/scss/type';
+@import '../../bootstrap/scss/nav';
+@import '../../bootstrap/scss/images';
+
+@import 'blocks/mixins';
+@import 'blocks/header';
+@import 'blocks/nav';
+
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $indigo;
+}
+
+
+.line-text {
+	@include textlight;
+}
+.title {
+	@include title;
+}
+.future-m {
+	background: $gray-200;
+	height: 461px;	
+}
+
+.future-m, .works_m, .meet_m  {
+	padding: 100px 0 0 0;
+}
+
+.heading {
+	@include heading;
+}
+
+.heading-ico1, .heading-ico2, .heading-ico3 {  
+  display: block;
+  
+  &::before {
+    content: '';
+    
+    width: 40px;
+	height: 40px;
+    top: 3px;
+    left: -38px;
+    position: absolute;
+  }
+}
+
+.heading-ico1 { 
+	
+&::before { 
+		background: url('../img/sprite.png') no-repeat -1px -1px;
+	}
+	
+}
+
+.heading-ico2 { 
+	
+&::before { 
+		background: url('../img/sprite.png') no-repeat -51px -1px;
+	}
+	
+}
+
+.heading-ico3 { 
+	
+&::before { 
+		background: url('../img/sprite.png') no-repeat -101px -1px;
+	}
+	
+}
+
+.text-future {
+	@include text-future;
+}
+
+.works {
+	height: 351px;
+}
+.description {
+	@include description;
+	margin-bottom: 49px;
+}
+.nav-item {
+	margin-bottom: 100px;
+	a {
+		color: $indigo;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		margin-right: 30px;
+	}
+}
+
+
+.gallery {
+	margin-bottom: 100px;
+
+	ul {
+		li {
+			@include reset-list;	
+
+		}
+	}	
+}

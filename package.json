@@ -1,0 +1,43 @@
+{
+  "name": "lifestyle",
+  "version": "1.0.0",
+  "description": "site Lifestyle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milladiz84/lifestyle.git"
+  },
+  "keywords": [
+    "lifestyle",
+    "responsive",
+    "flex-box"
+  ],
+  "author": "Milla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milladiz84/lifestyle/issues"
+  },
+  "homepage": "https://github.com/milladiz84/lifestyle#readme",
+  "browserslist": [
+    "last 8 versions"
+  ],
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
