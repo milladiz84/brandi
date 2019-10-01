@@ -11,6 +11,7 @@
 @import '../../bootstrap/scss/type';
 @import '../../bootstrap/scss/nav';
 @import '../../bootstrap/scss/images';
+@import '../../bootstrap/scss/card';
 
 @import 'blocks/mixins';
 @import 'blocks/header';
@@ -35,7 +36,7 @@ body {
 	height: 461px;	
 }
 
-.future-m, .works_m, .meet_m  {
+.future-m, .works_m {
 	padding: 100px 0 0 0;
 }
 
@@ -85,9 +86,6 @@ body {
 	@include text-future;
 }
 
-.works {
-	height: 351px;
-}
 .description {
 	@include description;
 	margin-bottom: 49px;
@@ -108,8 +106,100 @@ body {
 
 	ul {
 		li {
-			@include reset-list;	
+			@include reset-list;
 
 		}
 	}	
+}
+
+.card-title {
+	@include card;
+}
+
+.card-text {
+	@include card-text;
+}
+
+.cards {
+	width: 270px;
+	height: 300px;
+	margin-bottom: 100px;
+}
+
+.scrolls {
+	width: 53px;
+	height: 8px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 88px;
+	margin-bottom: 119px;
+	
+}
+
+.scroll_bg {
+	width: 8px;
+	height: 8px;
+	background: $indigo;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 0px;
+}
+
+.scroll-l {
+	width: 8px;
+	height: 8px;
+	border: 1px solid $gray-400;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 15px;
+}
+
+.scroll_2 {
+	width: 8px;
+	height: 8px;
+	border: 1px solid $gray-400;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 30px;
+}
+.facts {
+	height: 600px;
+	background: url('../img/bg.png') no-repeat center;
+	background-size: cover;
+}
+
+.fun_facts {
+	width: 1040px;
+	margin: 0 auto;
+
+}
+
+.items {
+	position: relative;
+}
+
+.item1, .item2, .item3, .item3 {
+	margin: 0 auto 31px;
+
+  &::before {
+    position: absolute;
+    content:'';
+  }
+}
+
+.item1 {
+  
+&::before {
+    background: url('../img/sprite.png') no-repeat -8px -132px;
+    width: 130px;
+    height: 130px;
+    top: 37px;
+    left: 32px;
+  }    
 }
