@@ -8134,10 +8134,6 @@ h2 {
 }
 
 /*Header*/
-.header {
-    height: 100vh;
-}
-
 .font-light {
     font-weight: 300;
 }
@@ -8503,6 +8499,7 @@ h2 {
     width: 40px;
     height: 40px;
     margin-bottom: 26px;
+    opacity: 0;
 }
 
 .ico-social, .ico-social2 {
@@ -8566,6 +8563,7 @@ h2 {
     width: 400px;
     height: 300px;
     position: absolute;
+    top: 0;
     padding: 90px 0 0 0;
 }
 
@@ -8579,12 +8577,23 @@ h2 {
     opacity: 0;
 }
 
+.image_hover_box .tt2 .ico-social2 {
+    opacity: 0;
+}
+
 .image_hover_box p {
     font-size: 14px;
 }
 
 .gallery ul li a:hover .image_hover_box {
     background: rgba(14, 180, 147, 0.95);
+    -webkit-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.gallery ul li a:hover .image_hover_box .eye {
+    opacity: 1;
     -webkit-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
@@ -8602,6 +8611,10 @@ h2 {
     -webkit-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
+}
+
+.gallery2 {
+    position: relative;
 }
 
 .discuss {

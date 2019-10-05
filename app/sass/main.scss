@@ -33,11 +33,11 @@ h2 {
 }
 
                                 /*Header*/
-.header {
-  height: 100vh;
-  // background: url('../img/header.png') no-repeat center;
-  // background-size: cover;
-}
+// .header {
+//   height: 100vh;
+//   // background: url('../img/header.png') no-repeat center;
+//   // background-size: cover;
+// }
 
 .font-light {
   font-weight: 300; 
@@ -302,15 +302,15 @@ h2 {
 }
 
  .item2 {
-    background: url('../img/sprite.png') no-repeat -159px -132px;    
+  background: url('../img/sprite.png') no-repeat -159px -132px;    
 }   
 
 .item3 {
-    background: url('../img/sprite.png') no-repeat -309px -132px;   
+  background: url('../img/sprite.png') no-repeat -309px -132px;   
 }   
 
 .item4 {
-    background: url('../img/sprite.png') no-repeat -461px -132px;    
+  background: url('../img/sprite.png') no-repeat -461px -132px;    
 } 
 
  
@@ -342,18 +342,20 @@ h2 {
 }
 
 .fb-card {
-    background: url('../img/sprite.png') no-repeat -71px -354px;
+  background: url('../img/sprite.png') no-repeat -71px -354px;
       
 }
 .google-card {
-    background: url('../img/sprite.png') no-repeat -131px -354px;
+  background: url('../img/sprite.png') no-repeat -131px -354px;
   
 }
 .eye {
-    background: url('../img/sprite.png') no-repeat -11px -83px;
-    width: 40px;
+  background: url('../img/sprite.png') no-repeat -11px -83px;
+  width: 40px;
 	height: 40px;  
 	margin-bottom: 26px;
+  opacity: 0;
+  // display: none;
 }
 
 .ico-social, .ico-social2 {
@@ -414,6 +416,7 @@ h2 {
 	width: 400px;
 	height: 300px;
 	position: absolute;
+  top: 0;
 	padding: 90px 0 0 0;
 
 	.tt2{
@@ -423,6 +426,10 @@ h2 {
 		&+p{
 			opacity: 0;
 		}
+  .ico-social2  {
+    opacity: 0;
+
+  }
 	}
 	p {
 		font-size: 14px;
@@ -440,6 +447,10 @@ h2 {
 					.image_hover_box {
 					background: rgba(14,180,147, .95);
 					transition: all 1.5s ease-in-out;
+          .eye{          
+           opacity: 1;
+           transition: all 1.5s ease-in-out; 
+          }
 					.tt2{
 						opacity: 1;
 						transition: all 1.5s ease-in-out;
@@ -456,7 +467,9 @@ h2 {
 }
 }
 
-
+.gallery2 {
+  position: relative;
+}
 
 .discuss {
 	@include discuss;
