@@ -8170,6 +8170,7 @@ h2 {
     right: -50px;
 }
 
+/*Social icons*/
 .ico_1 {
     background: url("../img/sprite.png") no-repeat -477px -357px;
     width: 20px;
@@ -8195,25 +8196,23 @@ h2 {
 }
 
 .social-icons {
-    margin-top: 100px;
-    opacity: .2;
+    position: absolute;
+    bottom: 8%;
+    left: calc(50% - 75px);
+    z-index: 100;
 }
 
-.social-icons li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-right: 17px;
+.link {
+    display: block;
+    opacity: 0.3;
+    margin: 0px 0px 0px 8px;
 }
 
-.social-icons a:hover {
+.link:hover {
     opacity: 1;
 }
 
-.carousel-item {
-    margin-top: 0;
-}
-
+/*end Social icons*/
 /*End header*/
 .green {
     color: #0eb493;
