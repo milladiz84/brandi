@@ -1,8 +1,16 @@
-.opacity {
-	height: 70px;
- 	background: rgba(16, 22, 54, 0.2);
- 	
-  
+// .opacity {
+// 	height: 70px;
+//  	background: rgba(16, 22, 54, 0.2); 
+// }
+
+.header-top-wrapper {
+  background: rgba(16, 22, 54, 0.2);
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {

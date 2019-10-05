@@ -71,7 +71,27 @@ h2 {
     }
 }
 
+                            /*Carousel*/
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 67px;
+    left: 15%;
+    z-index: 10;
+    padding-top: -22px;
+    padding-bottom: 125px;
+    color: #fff;
+    text-align: center;
+}
+
+                            /**/
+
                                       /*Social icons*/
+
+.ico_1, .ico_2, .ico_3 {
+  margin-right: 18px;
+}
 
 .ico_1 {
   background: url('../img/sprite.png') no-repeat -477px -357px;
@@ -105,7 +125,7 @@ h2 {
 .link {
   display: block;
   opacity: 0.3;
-  margin: 0px 0px 0px 8px;
+  
 
   &:hover {
     opacity: 1;
@@ -144,8 +164,7 @@ h2 {
   display: block;
   
   &::before {
-    content: '';
-    
+    content: '';    
     width: 40px;
 	  height: 40px;
     top: 3px;
