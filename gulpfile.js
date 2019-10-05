@@ -74,7 +74,7 @@ gulp.task('default', gulp.series('sass', function() {
         server: "app/"
     });
  
-    gulp.watch("app/sass/*.scss", gulp.series('sass'));
+    gulp.watch("app/sass/**/*.scss", gulp.series('sass'));
     gulp.watch("bootstrap/scss/**/*.scss", gulp.series('sass'));
     gulp.watch('app/css/*.css').on('change', browserSync.reload);
     gulp.watch("js/*.js").on('change', gulp.series('js'));

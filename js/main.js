@@ -4,6 +4,7 @@
 //= ../bootstrap/js/dist/tooltip.js
 //= ../bootstrap/js/dist/popover.js
 //= ../bootstrap/js/dist/tab.js
+//= ../bootstrap/js/dist/carousel.js
 
 
 //= custom/tooltip.js

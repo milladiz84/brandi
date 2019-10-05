@@ -288,8 +288,9 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
+
+$h1-font-size:                $font-size-base * (62/16) !default;
+$h2-font-size:                $font-size-base * (48/16) !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.125 !default;
@@ -1057,9 +1058,9 @@ $carousel-control-opacity:           .5 !default;
 $carousel-control-hover-opacity:     .9 !default;
 $carousel-control-transition:        opacity .15s ease !default;
 
-$carousel-indicator-width:           30px !default;
-$carousel-indicator-height:          3px !default;
-$carousel-indicator-hit-area-height: 10px !default;
+$carousel-indicator-width:           8px !default;
+$carousel-indicator-height:          8px !default;
+$carousel-indicator-hit-area-height: 8px !default;
 $carousel-indicator-spacer:          3px !default;
 $carousel-indicator-active-bg:       $white !default;
 $carousel-indicator-transition:      opacity .6s ease !default;

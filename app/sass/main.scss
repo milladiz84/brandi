@@ -12,11 +12,10 @@
 @import '../../bootstrap/scss/nav';
 @import '../../bootstrap/scss/images';
 @import '../../bootstrap/scss/card';
-
+@import '../../bootstrap/scss/carousel';
 @import 'blocks/mixins';
-@import 'blocks/header';
+@import 'blocks/header-tmpl';
 @import 'blocks/nav';
-
 
 
 body {
@@ -24,12 +23,208 @@ body {
 	color: $indigo;
 }
 
+h1 {
+ font-weight: 600;
+}
 
+h2 {
+  font-weight: 300;
+
+}
+
+                                /*Header*/
+.header {
+  height: 100vh;
+  // background: url('../img/header.png') no-repeat center;
+  // background-size: cover;
+}
+
+.font-light {
+  font-weight: 300; 
+}
+
+.light_text {
+  font-weight: 300;
+  font-size: $font-size-lg;
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content:'';
+      width: 29px;
+      height: 1px;
+      background: $green;
+      position: absolute;
+      top: 12px;
+      left: -50px;
+    }
+
+  &::after {
+      position: absolute;
+      content:'';
+      width: 29px;
+      height: 1px;
+      background: $green;
+      position: absolute;
+      top: 12px;
+      right: -50px;
+    }
+}
+
+.ico_1 {
+  background: url('../img/sprite.png') no-repeat -477px -357px;
+  width: 20px;
+  height: 16px; 
+        
+}
+.ico_2 {
+  background: url('../img/sprite.png') no-repeat -513px -356px;
+  width: 10px;
+  height: 18px;     
+}
+.ico_3 {
+  background: url('../img/sprite.png') no-repeat -541px -356px;
+  width: 18px;
+  height: 18px;     
+}
+.ico_4 {
+  background: url('../img/sprite.png') no-repeat -571px -355px;
+  width: 20px;
+  height: 20px;     
+}
+
+.social-icons {
+  margin-top: 100px;
+  opacity: .2;
+   li {
+      @include reset-list;     
+      margin-right: 17px;
+
+  }
+
+  a {
+      &:hover {
+        opacity: 1;
+
+      }
+    }
+
+}     
+.carousel-item {
+  margin-top: 0;
+}
+  
+
+
+
+// .social-icons {
+//   a {
+//      &:hover {
+//       opacity: 1;
+//      }     
+  
+// }
+// }
+
+
+
+
+// .social-icons {
+//   a {
+//     background: url('../img/sprite.png') no-repeat -477px -357px;
+//     width: 20px;
+//     height: 16px; 
+//     opacity: .2;
+//     &:hover {
+//       opacity: 1;
+//     }     
+//   }
+// }
+
+
+
+// .social-icons {
+//   ul {
+//     li {
+//       @include reset-list; 
+       
+//        }
+//      }
+//   }
+  
+
+// .ico_1, .ico_2, .ico_3, .ico_4 {
+//   margin-right: 17px;
+//   opacity: 0.2;
+// }
+
+// .social-icons {
+//   margin-bottom: 100px;
+
+//   ul {
+//     li {
+//       @include reset-list;
+
+//     }
+//   } 
+// }
+
+  // a { 
+   
+  //   &:hover {
+  //       opacity: 1; 
+  //      }
+  //   }
+  // } 
+  
+
+
+
+
+// .social-icons {
+
+//   ul {
+//     a {
+
+//       li {
+//         &:hover{
+//           opacity: 1; 
+//       }
+
+//     }
+//   }
+// }
+// }
+
+
+
+
+
+
+// .social-icons {
+//   li opacity: 0.2; {
+//     a {
+//        &:hover {
+//        opacity: 1;
+//       }
+//     }
+//   }
+// }
+
+
+                                /*End header*/
+
+.green {
+  color: $green;
+}
 .line-text {
 	@include textlight;
 }
 .title {
 	@include title;
+}
+.title2 {
+	@include title2;
 }
 .future-m {
 	background: $gray-200;
@@ -51,7 +246,7 @@ body {
     content: '';
     
     width: 40px;
-	height: 40px;
+	  height: 40px;
     top: 3px;
     left: -38px;
     position: absolute;
@@ -97,9 +292,9 @@ body {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
 		margin-right: 30px;
+		border-top: 3px solid transparent;
 	}
 }
-
 
 .gallery {
 	margin-bottom: 100px;
@@ -175,12 +370,13 @@ body {
 	height: 600px;
 	background: url('../img/bg.png') no-repeat center;
 	background-size: cover;
+	margin-bottom: 97px;
 }
 
 .fun_facts {
 	width: 1040px;
 	margin: 0 auto;
-	padding: 200px 0 0 0;
+	padding: 90px 0 0 0;
 
 }
 
@@ -214,9 +410,9 @@ body {
 
 .item4 {
     background: url('../img/sprite.png') no-repeat -461px -132px;    
-}   
-   
+} 
 
+ 
 .ico-item-title, .ico-item-text {
 	display: block;
 	color: $white;
@@ -229,6 +425,183 @@ body {
 	text-transform: uppercase;
 	font-size: 18px;
 }
-// .col-4 {
-//     max-width: 25%;
-//   }
+
+/*CARD*/
+
+.tweet-card, .fb-card, .google-card {
+	opacity: 0.3;
+	width: 42px;
+	height: 42px;
+	margin-right: 3px;
+	margin-top: 50px;
+	display: block;  
+}  
+.tweet-card {
+    background: url('../img/sprite.png') no-repeat -7px -354px;
+}
+
+.fb-card {
+    background: url('../img/sprite.png') no-repeat -71px -354px;
+      
+}
+.google-card {
+    background: url('../img/sprite.png') no-repeat -131px -354px;
+  
+}
+.eye {
+    background: url('../img/sprite.png') no-repeat -11px -83px;
+    width: 40px;
+	height: 40px;  
+	margin-bottom: 26px;
+}
+
+.ico-social, .ico-social2 {
+	display: none;
+}
+
+.card-hover-box{
+	background: rgba(14,180,147, .95);
+	padding: 12px 22px;
+	text-align: center;
+	color: #fff;
+	height: 300px;
+	position: absolute;
+	display: none;
+
+	.ttl{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 16px;
+	}
+}
+.card{
+	position: relative;
+	border: none;
+	&:hover{		
+
+		.card-hover-box{
+			display: block;
+
+		}
+		.ico-social {
+		display: block;
+		}
+		.card-title {
+			color: $green;
+			text-underline-position: $green;
+		}
+	}
+}
+.header{
+	.navbar-nav .nav-link{
+		border-top: 2px solid transparent;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.nav-link:hover{
+		border-top: 2px solid $green;
+		transition: .5s ease-in-out;
+	}
+}
+
+.image_hover_box { 
+	background: rgba(14,180,147, 0);
+	text-align: center;
+	color: #fff;
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	padding: 90px 0 0 0;
+
+	.tt2{
+		font-size: 18px;
+		font-weight: bold;
+		opacity: 0;
+		&+p{
+			opacity: 0;
+		}
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+
+.gallery {
+
+	ul {
+		li {
+
+			a{
+				&:hover{
+					.image_hover_box {
+					background: rgba(14,180,147, .95);
+					transition: all 1.5s ease-in-out;
+					.tt2{
+						opacity: 1;
+						transition: all 1.5s ease-in-out;
+						&+p{
+							opacity: 1;
+							transition: all 1.5s ease-in-out;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+}
+
+
+
+.discuss {
+	@include discuss;
+}
+.contacts {
+	@include contacts;
+}
+
+.map {
+	height: 215px;
+	background: url('../img/map.png') no-repeat center;
+	background-size: cover;
+}
+.ico1, .ico2, .ico3, .ico4, .ico5 {
+	opacity: 0.2;
+}
+.ico1 {
+  background: url('../img/sprite.png') no-repeat -177px -354px;
+	width: 41px;
+	height: 30px;     
+}
+
+ .ico2 {
+  background: url('../img/sprite.png') no-repeat -230px -355px;
+	width: 43px;
+	height: 34px;    
+}   
+
+.ico3 {
+  background: url('../img/sprite.png') no-repeat -295px -352px;
+	width: 41px;
+	height: 37px;   
+}   
+
+.ico4 {
+  background: url('../img/sprite.png') no-repeat -353px -348px;
+	width: 44px;
+	height: 42px;    
+}
+.ico5 {
+  background: url('../img/sprite.png') no-repeat -412px -354px;
+	width: 51px;
+	height: 39px;    
+}
+footer {
+	height: 404px;
+	background: $green;
+}
+

@@ -5,7 +5,7 @@
 	color: $green;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 36px;
 	display: block;
 
 	&::after {
@@ -13,7 +13,7 @@
 	    top: 10px;
 	    background: url('../img/sprite.png') no-repeat -145px -11px;
 	    top: 48px;
-	    left: 454px;
+	    left: calc(50% - 115px);
 	    width: 229px;
 		height: 14px;
 	    position: absolute;
@@ -21,7 +21,7 @@
 	}
 }
 
-@mixin title_white {
+@mixin title2 {
 	font-size: 28px;
 	font-weight: 800;
 	position: relative;
@@ -34,9 +34,9 @@
 	&::after {
 	    content: '';
 	    top: 10px;
-	    background: url('../img/sprite.png') no-repeat -145px -11px;
+	    background: url('../img/sprite.png') no-repeat -11px -297px;
 	    top: 48px;
-	    left: 454px;
+	    left: calc(50% - 115px);
 	    width: 229px;
 		height: 14px;
 	    position: absolute;
@@ -100,3 +100,32 @@
 	color: rgba(6, 32, 51, 0.56);
 	text-align: center;
 }
+
+@mixin discuss {
+	font-size: 22px;
+	line-height: 31px; 
+	display: block;
+	margin-bottom: 41px;
+}
+
+@mixin contacts {
+
+	ul{
+		padding: 0;
+		li {
+			@include reset-list;
+			font-size: 13px;
+			color: $gray-500;
+			line-height: 24px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
