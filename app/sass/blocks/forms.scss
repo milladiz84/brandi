@@ -32,33 +32,50 @@
 
 .form-group {
 
-  width: 770px;
-  margin: 0;
+  width: 100%;
+  margin: 0 !important;
   padding: 0;
+  @media screen and (max-width: 900px) {
+  	flex-direction: column;
+  }
 
   .line1 {
 
-    width: 375px;
-    border-top: none;
-    border-left: none;
-    border-right: none; 
-    border-radius: 0; 
-
-    &:first-child{
-
-      margin-right: 30px;
+    width: 48%;
+    @media screen and (max-width: 900px) {
+    	width: 100%;
     }
+	    input {
+
+	    width: 100%;
+	    border-top: none;
+	    border-left: none;
+	    border-right: none;
+	    border-bottom: 1px solid rgba(204, 204, 204, 0.6); 
+	    border-radius: 0; 
+
+		}
+
+   
   }
 
 }
 
 .line2 {
 
-   width: 770px;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   border-radius: 0;
+   width: 100%;
+   
+	   textarea {
+	   width: 100%;
+	   border-top: none;
+	   border-left: none;
+	   border-right: none;
+	   border-radius: 0;
+	   border-bottom: 1px solid rgba(204, 204, 204, 0.6); 
+	   resize: none;
+	  
+	  }
+  
 
 }
 
