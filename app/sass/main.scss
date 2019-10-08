@@ -5,6 +5,7 @@
 @import '../../bootstrap/scss/navbar';
 @import '../../bootstrap/scss/buttons';
 @import '../../bootstrap/scss/alert';
+@import '../../bootstrap/scss/forms';
 @import '../../bootstrap/scss/tooltip';
 @import '../../bootstrap/scss/transitions';
 @import '../../bootstrap/scss/popover';
@@ -16,6 +17,9 @@
 @import 'blocks/mixins';
 @import 'blocks/header-tmpl';
 @import 'blocks/nav';
+@import 'blocks/forms';
+@import 'blocks/footer';
+
 
 
 body {
@@ -30,6 +34,11 @@ h1 {
 h2 {
   font-weight: 300;
 
+}
+
+a{
+  text-decoration: none;
+  color: $black;  
 }
 
                                 /*Header*/
@@ -502,39 +511,69 @@ h2 {
 	background: url('../img/map.png') no-repeat center;
 	background-size: cover;
 }
-.ico1, .ico2, .ico3, .ico4, .ico5 {
-	opacity: 0.2;
-}
-.ico1 {
-  background: url('../img/sprite.png') no-repeat -177px -354px;
-	width: 41px;
-	height: 30px;     
-}
 
- .ico2 {
-  background: url('../img/sprite.png') no-repeat -230px -355px;
-	width: 43px;
-	height: 34px;    
-}   
-
-.ico3 {
-  background: url('../img/sprite.png') no-repeat -295px -352px;
-	width: 41px;
-	height: 37px;   
-}   
-
-.ico4 {
-  background: url('../img/sprite.png') no-repeat -353px -348px;
-	width: 44px;
-	height: 42px;    
-}
-.ico5 {
-  background: url('../img/sprite.png') no-repeat -412px -354px;
-	width: 51px;
-	height: 39px;    
-}
+                        /*footer*/
 footer {
 	height: 404px;
 	background: $green;
+  border-top: 5px solid;
 }
 
+.text-footer {
+  @include text-footer;
+}
+
+.title-footer {
+  @include title-footer;
+}
+
+.copy {
+  @include copy;
+}
+.heart2 {
+  @include copy;
+  margin-left: 28px;
+}
+
+.heart {
+  position: relative;
+
+  &:before {
+  content: '';
+  background: url('../img/sprite.png') no-repeat -607px -359px;
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 19px;
+  top: 3px;
+ 
+  opacity: .3;
+  }
+}
+
+.list-footer {
+  @include reset-list;
+  @include text-footer;
+  line-height: 31px;
+
+  a {
+    color: $white;
+  }
+}
+.line-vertical {
+  position: relative;
+
+   &:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 39px;
+    background: $indigo;
+    top: 3px;
+    left: -12px;
+    display: block;
+    opacity: .3;
+   }
+}
+
+                               /*end footer*/

@@ -121,7 +121,34 @@
 	}
 }
 
+@mixin text-footer {
+	font-size: $font-size-sm;
+	color: $white;
+	line-height: 24px;
+}
 
+@mixin title-footer {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 47px;
+	color: $white;
+	display: block;
+}
+.img-footer {
+	margin-bottom: 45px;	
+}
+@mixin copy {
+  font-size: $font-size-sm;
+  color: $black;
+}
+// .line-vertical {
+// 	position: absolute;
+// 	width: 1px;
+// 	height: 39px;
+// 	background: $green;
+// 	display: block;
+
+// }
 
 
 

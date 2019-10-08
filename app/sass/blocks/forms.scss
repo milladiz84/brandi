@@ -1,0 +1,83 @@
+.ico1, .ico2, .ico3, .ico4, .ico5 {
+	opacity: 0.2;
+}
+.ico1 {
+  background: url('../img/sprite.png') no-repeat -177px -354px;
+	width: 41px;
+	height: 30px;     
+}
+
+ .ico2 {
+  background: url('../img/sprite.png') no-repeat -230px -355px;
+	width: 43px;
+	height: 34px;    
+}   
+
+.ico3 {
+  background: url('../img/sprite.png') no-repeat -295px -352px;
+	width: 41px;
+	height: 37px;   
+}   
+
+.ico4 {
+  background: url('../img/sprite.png') no-repeat -353px -348px;
+	width: 44px;
+	height: 42px;    
+}
+.ico5 {
+  background: url('../img/sprite.png') no-repeat -412px -354px;
+	width: 51px;
+	height: 39px;    
+}
+
+.form-group {
+
+  width: 770px;
+  margin: 0;
+  padding: 0;
+
+  .line1 {
+
+    width: 375px;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-radius: 0; 
+
+    &:first-child{
+
+      margin-right: 30px;
+    }
+  }
+
+}
+
+.line2 {
+
+   width: 770px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-radius: 0;
+
+}
+
+.button {
+
+  border: none;
+  background: #fff;
+  float: right;
+  position: relative;
+  margin-top: 20px;
+
+  &::before {
+
+    content:'';
+    background: url('../img/sprite.png') no-repeat -58px -72px;
+	width: 23px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	left: -29px;
+    }
+}
