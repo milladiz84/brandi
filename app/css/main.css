@@ -4505,7 +4505,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+        max-width: 1200px;
     }
 }
 
@@ -8805,9 +8805,35 @@ mark,
     left: -29px;
 }
 
+@media screen and (max-width: 1300px) {
+    .fff {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .future-m {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .future-m {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    header, .carousel .slide, .footer, footer, main {
+        max-width: 100%l;
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #062033;
+    padding: 0;
+    margin: 0 auto;
 }
 
 h1 {
@@ -9030,7 +9056,7 @@ a:hover {
 .description {
     font-size: 1.125rem;
     font-weight: 600;
-    width: 929px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 49px;
@@ -9324,6 +9350,8 @@ a:hover {
     transition: all 1.5s ease-in-out;
 }
 
+/*Future*/
+/*/Future*/
 .gallery2 {
     position: relative;
 }
@@ -9443,3 +9471,4 @@ footer {
 }
 
 /*end footer*/
+/**/

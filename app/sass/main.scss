@@ -19,12 +19,16 @@
 @import 'blocks/nav';
 @import 'blocks/forms';
 @import 'blocks/footer';
+@import 'blocks/media';
 
 
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: $indigo;
+  padding: 0;
+  margin: 0 auto;
+ 
 }
 
 h1 {
@@ -497,6 +501,11 @@ a{
 }
 }
 
+/*Future*/
+
+
+/*/Future*/
+
 .gallery2 {
   position: relative;
 }
@@ -595,3 +604,5 @@ footer {
 }
 
                                /*end footer*/
+
+                               /**/

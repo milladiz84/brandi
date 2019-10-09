@@ -73,9 +73,10 @@
 @mixin description {
 	font-size: $font-size-lg;
 	font-weight: 600;
-	width: 929px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+
 }
 
 @mixin reset-list {
