@@ -31,6 +31,18 @@
     position: relative;
 }
 
+@media screen and (max-width: 800px) {
+    .navbar-nav li:hover {
+        align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-nav li a:hover {
+        border-top: 1px solid transparent;
+    }
+}
+
 .navbar {
     -webkit-box-align: start;
     -ms-flex-align: start;

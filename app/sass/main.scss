@@ -38,7 +38,10 @@ h2 {
 
 a{
   text-decoration: none;
-  color: $black;  
+  color: $black; 
+  &:hover {
+    color: $black;
+  } 
 }
 
                                 /*Header*/
@@ -464,7 +467,6 @@ a{
 	}
 }
 
-
 .gallery {
 
 	ul {
@@ -529,6 +531,10 @@ footer {
 
 .copy {
   @include copy;
+  margin-top: 47px;
+    a {
+
+    }
 }
 .heart2 {
   @include copy;
@@ -545,8 +551,7 @@ footer {
   height: 14px;
   position: absolute;
   left: 19px;
-  top: 3px;
- 
+  top: 3px; 
   opacity: .3;
   }
 }
@@ -554,10 +559,16 @@ footer {
 .list-footer {
   @include reset-list;
   @include text-footer;
+  padding: 0;
   line-height: 31px;
+  // display: inline-block;
+  margin-right: 40px;
 
   a {
     color: $white;
+    &:hover {
+
+    }
   }
 }
 .line-vertical {
@@ -574,6 +585,13 @@ footer {
     display: block;
     opacity: .3;
    }
+}
+.heart__ {
+  margin-top: 74px;
+}
+.footer_ {
+  padding: 100px 0 0 0;
+
 }
 
                                /*end footer*/

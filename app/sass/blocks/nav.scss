@@ -39,6 +39,18 @@
 .navbar-nav  {
 	li {
 		position: relative;
+    &:hover {
+      @media screen and (max-width: 800px) {
+        align: center;
+      }
+    }
+    a {
+      &:hover {
+        @media screen and (max-width: 800px) {
+          border-top: 1px solid transparent;
+        }
+      }
+    }
 	}
 }
 
