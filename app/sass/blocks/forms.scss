@@ -30,35 +30,51 @@
 	height: 39px;    
 }
 
-.form-group {
 
-  width: 100%;
-  margin: 0 !important;
-  padding: 0;
-  @media screen and (max-width: 900px) {
-  	flex-direction: column;
-  }
 
-  .line1 {
-
-    width: 48%;
-    @media screen and (max-width: 900px) {
-    	width: 100%;
+.form {	
+    legend {
+      font-weight: 700;
     }
-	    input {
-
-	    width: 100%;
-	    border-top: none;
-	    border-left: none;
-	    border-right: none;
-	    border-bottom: 1px solid rgba(204, 204, 204, 0.6); 
-	    border-radius: 0; 
-
-		}
-		   
-  }
-
-}
+    &__title {
+     
+    }//&__title
+    &__text {
+      line-height: 24px;
+      color:#6a737b;
+    }//&__text
+    
+    .form-input {
+      width: 49%;
+      display: inline-block;
+    }//.form-input
+    input {
+      outline: none;
+      border:none;
+      border-bottom: 1px solid #ccc;
+      
+      &::placeholder {
+       font-size: 13px;
+		font-weight: 400;
+		color: #ccc;
+      }//&::placehilder
+    }//input
+    .submit {
+      background: none;
+      margin-top: 20px;
+      // @include input-text(400,16px,$openSans,1);
+      position: relative;
+      &::before {
+        content: '';
+        background: url('../img/sprite.png') no-repeat -58px -72px;
+        width: 23px;
+        height: 16px;
+        position: absolute;
+        top: calc(50% - 7px);
+        left: -32px;
+      }
+    }//.submit
+  }//.form
 
 .line2 {
 
@@ -78,22 +94,22 @@
 
 }
 
-.button {
+// .button {
 
-  border: none;
-  background: #fff;
-  float: right;
-  position: relative;
-  margin-top: 20px;
+//   border: none;
+//   background: #fff;
+//   float: right;
+//   position: relative;
+//   margin-top: 20px;
 
-  &::before {
+//   &::before {
 
-    content:'';
-    background: url('../img/sprite.png') no-repeat -58px -72px;
-	width: 23px;
-	height: 16px;
-	position: absolute;
-	top: 10px;
-	left: -29px;
-    }
-}
+//     content:'';
+//     background: url('../img/sprite.png') no-repeat -58px -72px;
+// 	width: 23px;
+// 	height: 16px;
+// 	position: absolute;
+// 	top: 10px;
+// 	left: -29px;
+//     }
+// }

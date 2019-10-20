@@ -142,6 +142,13 @@
   font-size: $font-size-sm;
   color: $black;
 }
+
+@mixin input-text {
+	font-size: 13px;
+	font-weight: 400;
+	color: #ccc;
+
+}
 // .line-vertical {
 // 	position: absolute;
 // 	width: 1px;

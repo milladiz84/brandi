@@ -134,12 +134,12 @@
                          <p class="text-future">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
                     </div>  
                 </div>
-                <div class="container scrolls">
+             <!--    <div class="container scrolls">
                     <span class="scroll_bg"></span>
                     <span class="scroll-l"></span>            
                     <span class="scroll_2"></span>
         
-        </div>
+                </div> -->
 
     </section>
                              <!--  End section future -->
@@ -384,22 +384,22 @@
         <div class="container fun_facts">
              <span class="title2">Some Fun Facts</span>
             <div class="row ">
-                <div class="col-3 items d-flex flex-column">
+                <div class="col-lg-3 items d-flex flex-column">
                     <span class="item1"></span>
                     <span class="ico-item-title text-center">3200</span>
                     <p class="ico-item-text text-center">hours of work</p>
                 </div>
-                 <div class="col-3 items d-flex flex-column">
+                 <div class="col-lg-3 items d-flex flex-column">
                     <span class="item2"></span>
                     <span class="ico-item-title text-center">120</span>
                     <p class="ico-item-text text-center">Satisfied Clinets</p>
                 </div>   
-                 <div class="col-3 items d-flex flex-column">
+                 <div class="col-lg-3 items d-flex flex-column">
                     <span class="item3"></span>
                     <span class="ico-item-title text-center">360</span>
                     <p class="ico-item-text text-center">Projects delivered</p>
                 </div>
-                 <div class="col-3 items d-flex flex-column">
+                 <div class="col-lg-3 items d-flex flex-column">
                     <span class="item4"></span>
                     <span class="ico-item-title text-center">42</span>
                     <p class="ico-item-text text-center">Awards Won</p>
@@ -414,13 +414,13 @@
 
  <section class="container discuss">
     <div class="title_main">
-        <span class="title">Let’s Discuss</span>
+        <span class="title" >Let’s Discuss</span>
         <p class="description">Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3">
           <span class="discuss">Cras at ultrices erat, sed vulputate!</span>
-          <div class="contacts d-flex align-items-start">
+          <div class="contacts d-flex">
               <ul>
                   <li>2345 Setwant natrer, 1234,</li>
                   <li>Washington. United States.</li>
@@ -431,48 +431,21 @@
           </div>
         </div>
                                     <!-- Forms -->
-        <div class="col-8">
-            <form>
-                <div class="row forms">
-                    <div class="col">
-                         <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col">                        
-                         <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="col-8">                        
-                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                         <button type="submit" class="btn">Send message</button>
-                    </div>
-                    
-              </div>
-            </form >
-            <form>
-                <div class="form-group d-flex justify-content-between flex-wrap">
-                <div class="line1">
-                    <label for="input"></label>
-                    <input type="email" class="" id="input" placeholder="Name">
+        <form class="col-lg-8 forms">
+              <fieldset class="form mb-5">
+                <legend class="mb-40">Say hello!</legend>
+                <div class="input__wrap d-flex justify-content-lg-between flex-wrap">
+                  <input type="text" name="name" id="name" placeholder="Name" class="pb-3 form-input mt-1">
+                  <input type="text" name="email" id="email" placeholder="Email" class="pb-3  form-input ">
+                  <input type="text" name="message" id="message"  placeholder="Message" class="pb-3 w-100 mb-40 mt-48">
                 </div>
+                <!-- /.input__wrap -->
+                <button type="submit" class="ml-auto border-0 d-block submit">Send message</button>
+             </fieldset>
+         </form>
 
-                <div class="line1">
-                    <label for="input"></label>
-                    <input type="email" class="" id="input" placeholder="Email">
-                </div>
-
-                <div class="line2">
-                    <label for="textarea"></label>
-                    <textarea type="text" class="" id="textarea" placeholder="Message"></textarea>
-
-                </div>
-                </div>
-
-                <div>
-                    <button type="submit" class="button">Send message</button>
-                </div>
-            </form>
-        </div>
         
-        <div class="col-1 d-flex flex-column ">
+        <div class="col-lg-1 col-md-12 col-sm-12 d-flex flex-column icons-soc justify-content-center ">
           <a href="#" class="ico1"></a>
           <a href="#" class="ico2"></a>
           <a href="#" class="ico3"></a>

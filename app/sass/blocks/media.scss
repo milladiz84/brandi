@@ -25,24 +25,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media screen and (max-width: 768px) {
-// 	.future-m {
-//   	padding: 0 100px;
-// 	}
-// }
+@media screen and (max-width: 768px) {
+	  .form {
+      input[type="text"]{
+        width: 100%;
+      }//type=text
+    }//.form
+}
 
 // @media screen and (max-width: 576px) {
 // 	.future-m {
@@ -58,8 +47,11 @@
 
 
 
-// @media screen and (max-width: 1000px) {
-// 	.fff {
-//   	padding: 0 100px;
-// 	}
-// }
+@media screen and (max-width: 1000px) {
+	.fff {
+  	padding: 0 100px;
+	}
+	.icons-soc {
+		flex-direction: row;	
+	}
+}

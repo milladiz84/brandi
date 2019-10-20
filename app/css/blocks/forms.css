@@ -32,38 +32,70 @@
     height: 39px;
 }
 
-.form-group {
-    width: 100%;
-    margin: 0 !important;
-    padding: 0;
+.form legend {
+    font-weight: 700;
 }
 
-@media screen and (max-width: 900px) {
-    .form-group {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
+.form__text {
+    line-height: 24px;
+    color: #6a737b;
 }
 
-.form-group .line1 {
-    width: 48%;
+.form .form-input {
+    width: 49%;
+    display: inline-block;
 }
 
-@media screen and (max-width: 900px) {
-    .form-group .line1 {
-        width: 100%;
-    }
+.form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
 }
 
-.form-group .line1 input {
-    width: 100%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.6);
-    border-radius: 0;
+.form input::-webkit-input-placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.form input::-moz-placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.form input:-ms-input-placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.form input::-ms-input-placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.form input::placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.form .submit {
+    background: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+.form .submit::before {
+    content: '';
+    background: url("../img/sprite.png") no-repeat -58px -72px;
+    width: 23px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 7px);
+    left: -32px;
 }
 
 .line2 {
@@ -78,22 +110,4 @@
     border-radius: 0;
     border-bottom: 1px solid rgba(204, 204, 204, 0.6);
     resize: none;
-}
-
-.button {
-    border: none;
-    background: #fff;
-    float: right;
-    position: relative;
-    margin-top: 20px;
-}
-
-.button::before {
-    content: '';
-    background: url("../img/sprite.png") no-repeat -58px -72px;
-    width: 23px;
-    height: 16px;
-    position: absolute;
-    top: 10px;
-    left: -29px;
 }
