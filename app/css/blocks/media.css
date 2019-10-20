@@ -1,23 +1,13 @@
-@media screen and (max-width: 1300px) {
-    .fff {
-        padding: 0 100px;
+@media screen and (max-width: 540px) {
+    .title-footer, .col__, .heart__, .line-vertical {
+        padding: 0 16px;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .future-m {
-        padding: 0 100px;
+    .title-footer .line-vertical::before, .col__ .line-vertical::before, .heart__ .line-vertical::before, .line-vertical .line-vertical::before {
+        display: none;
     }
-}
 
-@media screen and (max-width: 576px) {
-    .future-m {
-        padding: 0 100px;
-    }
-}
-
-@media screen and (max-width: 1170px) {
-    header, .carousel .slide, .footer, footer, main {
-        max-width: 100%l;
+    .title-footer {
+        margin-top: 20px;
     }
 }

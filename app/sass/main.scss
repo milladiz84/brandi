@@ -20,6 +20,7 @@
 @import 'blocks/forms';
 @import 'blocks/footer';
 @import 'blocks/media';
+@import 'blocks/header';
 
 
 
@@ -185,7 +186,7 @@ a{
 }
 .future-m {
 	background: $gray-200;
-	height: 461px;	
+	//height: 461px;	
 }
 
 .future-m, .works_m {
@@ -549,6 +550,7 @@ footer {
 	height: 404px;
 	background: $green;
   border-top: 5px solid;
+  height: 100%;
 }
 
 .text-footer {
