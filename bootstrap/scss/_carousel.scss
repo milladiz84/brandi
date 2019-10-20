@@ -144,12 +144,10 @@
 
 .carousel-indicators {
   position: absolute;
-  right: -175px;
-  bottom: 467px;
+
   z-index: 15;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  justify-content: center;
   padding-left: 0; // override <ol> default
   // Use the .carousel-control's width as margin so we don't overlay those
   margin-right: $carousel-control-width;
@@ -159,16 +157,14 @@
   li {
     box-sizing: content-box;
     flex: 0 1 auto;
-    border-radius: 50%;
     width: $carousel-indicator-width;
     height: $carousel-indicator-height;
     margin-right: $carousel-indicator-spacer;
     margin-left: $carousel-indicator-spacer;
-    text-indent: -999px;    
+    text-indent: -999px;
     cursor: pointer;
     background-color: $carousel-indicator-active-bg;
     background-clip: padding-box;
-
     // Use transparent borders to increase the hit area by 10px on top and bottom.
     border-top: $carousel-indicator-hit-area-height solid transparent;
     border-bottom: $carousel-indicator-hit-area-height solid transparent;

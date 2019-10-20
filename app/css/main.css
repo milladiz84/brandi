@@ -8584,19 +8584,13 @@ mark,
 
 .carousel-indicators {
     position: absolute;
-    right: -175px;
-    bottom: 467px;
     z-index: 15;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-left: 0;
     margin-right: 15%;
     margin-left: 15%;
@@ -8609,7 +8603,6 @@ mark,
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    border-radius: 50%;
     width: 8px;
     height: 8px;
     margin-right: 3px;
@@ -8899,6 +8892,30 @@ a:hover {
     text-align: center;
 }
 
+.carousel-indicators {
+    position: absolute;
+    right: -17%;
+    top: calc(50% - 60px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
 /**/
 /*Social icons*/
 .ico_1, .ico_2, .ico_3 {
@@ -9157,7 +9174,6 @@ a:hover {
 }
 
 .fun_facts {
-    width: 1040px;
     margin: 0 auto;
     padding: 90px 0 0 0;
 }

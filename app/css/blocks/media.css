@@ -1,0 +1,23 @@
+@media screen and (max-width: 1300px) {
+    .fff {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .future-m {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .future-m {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    header, .carousel .slide, .footer, footer, main {
+        max-width: 100%l;
+    }
+}

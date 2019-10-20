@@ -26,9 +26,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: $indigo;
-  padding: 0;
-  margin: 0 auto;
- 
+ 	padding: 0;
+	margin: 0 auto;
 }
 
 h1 {
@@ -100,6 +99,27 @@ a{
     color: #fff;
     text-align: center;
 }
+
+    .carousel-indicators{
+        position: absolute;
+        right: -17%;
+        top:calc(50% - 60px);
+        transform: rotate(90deg);
+        
+        li {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 15px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid $white;
+            border-radius: 10px;
+        }//.carousel-indicators li
+        .active {
+            background-color: #fff;
+        }
+    }//.carousel-indicators
 
                             /**/
 
@@ -231,6 +251,7 @@ a{
 		border-top: 3px solid transparent;
 	}
 }
+												// GALLERY
 
 .gallery {
 	margin-bottom: 100px;
@@ -299,7 +320,7 @@ a{
 	top: 1px;
 	left: 30px;
 }
-
+										// GALLERY END
 // Section facts
 
 .facts {
@@ -310,7 +331,7 @@ a{
 }
 
 .fun_facts {
-	width: 1040px;
+	// width: 1040px;
 	margin: 0 auto;
 	padding: 90px 0 0 0;
 
@@ -448,7 +469,7 @@ a{
 	background: rgba(14,180,147, 0);
 	text-align: center;
 	color: #fff;
-	width: 400px;
+	width: 400px;                     // ширина ппроверить
 	height: 300px;
 	position: absolute;
   top: 0;
