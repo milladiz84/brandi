@@ -1,7 +1,7 @@
 
 // .opacity {
-// 	height: 70px;
-//  	background: rgba(16, 22, 54, 0.2); 
+//  height: 70px;
+//    background: rgba(16, 22, 54, 0.2); 
 // }
 
 .header-top-wrapper {
@@ -38,8 +38,8 @@
 
 
 .navbar-nav  {
-	li {
-		position: relative;
+  li {
+    position: relative;
     &:hover {
       @media screen and (max-width: 800px) {
         align: center;
@@ -52,7 +52,7 @@
         }
       }
     }
-	}
+  }
 }
 
 .navbar {
