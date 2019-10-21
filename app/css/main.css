@@ -8824,11 +8824,19 @@ mark,
     .title-footer {
         margin-top: 20px;
     }
+
+    .carousel-indicators {
+        top: calc(50% - 12px);
+    }
 }
 
 @media screen and (max-width: 768px) {
     .form input[type="text"] {
         width: 100%;
+    }
+
+    .w-100 {
+        height: 80vh;
     }
 }
 
@@ -9049,7 +9057,7 @@ a:hover {
 }
 
 .future-m, .works_m {
-    padding: 100px 0 0 0;
+    padding: 100px 0 100px;
 }
 
 .heading {
@@ -9512,3 +9520,7 @@ footer {
 
 /*end footer*/
 /**/
+.nav-item {
+    margin-bottom: 1px;
+    text-align: center;
+}

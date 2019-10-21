@@ -10,11 +10,19 @@
     .title-footer {
         margin-top: 20px;
     }
+
+    .carousel-indicators {
+        top: calc(50% - 12px);
+    }
 }
 
 @media screen and (max-width: 768px) {
     .form input[type="text"] {
         width: 100%;
+    }
+
+    .w-100 {
+        height: 80vh;
     }
 }
 

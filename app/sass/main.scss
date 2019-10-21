@@ -58,6 +58,9 @@ a{
 .font-light {
   font-weight: 300; 
 }
+.w-100 {
+	// width: auto;
+}
 
 .light_text {
   font-weight: 300;
@@ -190,7 +193,7 @@ a{
 }
 
 .future-m, .works_m {
-	padding: 100px 0 0 0;
+	padding: 100px 0 100px
 }
 
 .heading {
@@ -630,3 +633,10 @@ footer {
                                /*end footer*/
 
                                /**/
+
+.nav-item {
+	margin-bottom: 1px;
+	text-align: center;
+
+
+}
